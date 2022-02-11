@@ -38,9 +38,47 @@ let core;
         <p>Below are several of the main services that we provide. </p>`; 
     }
 
+    /**
+     * displayContact - This method adds the body html elements for the contact page
+     */
     function displayContact()
     {
         console.log("Disp Cont"); 
+
+        let body = document.getElementById("bodyCopy");
+        
+        body.innerHTML = `<form>
+            <h2>Contact Us</h2>
+            <div class="form-group row">
+                <label for="inputFName" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputFName" placeholder="First Name">
+            </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputLName" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputLName" placeholder="Last Name">
+            </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email Address</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+            </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputMessage" placeholder="Message">
+            </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+             <button type="submit" class="btn btn-primary">Submit</button>
+             </div>
+            </div>
+            </form> `;
     }
 
     function Start()
