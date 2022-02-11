@@ -11,6 +11,11 @@ let core;
     function displayHome()
     {
         console.log("Disp Home"); 
+
+        let body = document.getElementById("bodyCopy"); 
+
+        body.innerHTML = `<br/><h2>Welcome to our WEBD6201 lab page.</h2>
+        <p>We created this website to domonstrate our proficiency and understanding with Javascript.</p>`; 
     }
 
     function displayAbout()
@@ -18,14 +23,19 @@ let core;
         console.log("Disp About"); 
     }
 
-    function displayProducts()
+    function displayProjects()
     {
-        console.log("Disp Prod"); 
+        console.log("Disp Proj"); 
     }
 
     function displayServices()
     {
         console.log("Disp Serv"); 
+
+        let body = document.getElementById("bodyCopy"); 
+
+        body.innerHTML = `<br/><h2>Our Services</h2>
+        <p>Below are several of the main services that we provide. </p>`; 
     }
 
     function displayContact()
@@ -37,6 +47,10 @@ let core;
     {
         console.log("App Started...");
 
+        document.getElementById("projLink").innerHTML = `<i class="fas fa-cog fa-lg"></i> Projects`;
+
+        console.log(document.getElementById("projLink").textContent); 
+
         switch (document.title) 
         {
           case "Home":
@@ -45,8 +59,8 @@ let core;
           case "About Us":
               displayAbout();
             break;
-          case "Products":
-              displayProducts();
+          case "Projects":
+              displayProjects();
             break;
           case "Services":
               displayServices();

@@ -2,4 +2,7 @@
 
     File: app.css
 */
-body {background-color: grey;}
+body {
+    background-color: #696969;
+    color: lime;
+}
