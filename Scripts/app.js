@@ -1,5 +1,10 @@
 /*
+    Authors: MJ Galbraith (100755993), Matthew Austin (100660651)
     File: app.js
+    Date: 2022/02/09
+    Description: 
+        This is the javascript file for the website
+    
 */
 
 "use strict";
@@ -46,7 +51,7 @@ let core;
         console.log("Disp Cont"); 
 
         let body = document.getElementById("bodyCopy");
-        
+
         body.innerHTML = `<form>
             <h2>Contact Us</h2>
             <div class="form-group row">
