@@ -13,6 +13,9 @@ let core;
 
 ((core) =>
 {
+    /**
+     * displayHome - Displays the body content for index.html
+     */
     function displayHome()
     {
         console.log("Disp Home"); 
@@ -23,6 +26,9 @@ let core;
         <p>We created this website to domonstrate our proficiency and understanding with Javascript.</p>`; 
     }
 
+    /**
+     * displayAbout - Displays the body content for about.html
+     */
     function displayAbout()
     {
         console.log("Disp About"); 
@@ -101,6 +107,9 @@ let core;
         `;
     }
 
+    /**
+     * displayServices - Displays body content for services.html 
+    */
     function displayServices()
     {
         console.log("Disp Serv"); 
@@ -108,7 +117,12 @@ let core;
         let body = document.getElementById("bodyCopy"); 
 
         body.innerHTML = `<br/><h2>Our Services</h2>
-        <p>Below are several of the main services that we provide. </p>`; 
+        <p>Below are several of the main services that we provide. </p>
+        <ul class="list-group">
+        <li class="list-group-item">Web Design</li>
+        <li class="list-group-item">Computer Programming</li>
+        <li class="list-group-item">Computer Systems Analysis</li>
+        </ul>`; 
     }
 
     /**
