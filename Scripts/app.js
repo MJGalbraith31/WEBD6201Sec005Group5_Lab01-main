@@ -91,7 +91,7 @@ let core;
 
         let body = document.getElementById("bodyCopy");
 
-        body.innerHTML = `<form>
+        body.innerHTML = `<form onsubmit="event.preventDefault();">
             <h2>Contact Us</h2>
             <div class="form-group row">
                 <label for="inputFName" class="col-sm-2 col-form-label">First Name</label>
@@ -119,10 +119,25 @@ let core;
             </div>
             <div class="form-group row">
                 <div class="col-sm-10">
-             <button type="submit" class="btn btn-primary">Submit</button>
+             <button id="contactSubmit" class="btn btn-primary">Submit</button>
              </div>
             </div>
             </form> `;
+
+        $("#contactSubmit").on("click", (event)=>
+        {
+            console.log("First Name: " + $("#inputFName").val()); 
+            console.log("Last Name: " + $("#inputLName").val()); 
+            console.log("Email: " + $("#inputEmail").val()); 
+            console.log("Message: " + $("#inputMessage").val()); 
+
+            window.setTimeout(goHome, 3000);
+        });
+    }
+
+    function goHome()
+    {
+        window.location.href = "./index.html"
     }
 
     function Start()
@@ -130,8 +145,6 @@ let core;
         console.log("App Started...");
 
         document.getElementById("projLink").innerHTML = `<i class="fas fa-cog fa-lg"></i> Projects`;
-
-        console.log(document.getElementById("projLink").textContent); 
 
         switch (document.title) 
         {
