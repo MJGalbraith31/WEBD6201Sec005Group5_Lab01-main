@@ -26,6 +26,45 @@ let core;
     function displayAbout()
     {
         console.log("Disp About"); 
+
+        let body = document.getElementById("bodyCopy");
+
+        /* about section style modeled from... 
+         https://www.w3schools.com/howto/howto_css_about_page.asp
+        */
+         body.innerHTML = `
+        <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>WEBD 6201 Group# 05</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="#" alt="MJ" style="width:100%">
+            <div class="container">
+              <h2>MJ Galbraith</h2>
+              <p class="title">Computer Programmer</p>
+              <p>murray.galbraith@dcmail.ca</p>
+              <a href="#">Resume</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="#" alt="Matthew" style="width:100%">
+            <div class="container">
+              <h2>Matthew Austin</h2>
+              <p class="title">Computer Programmer</p>
+              <p>matthew.austin@dcmail.ca</p>
+              <a href="#">Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        `;
     }
 
     function displayProjects()
