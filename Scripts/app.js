@@ -122,7 +122,8 @@ let core;
         <li class="list-group-item">Web Design</li>
         <li class="list-group-item">Computer Programming</li>
         <li class="list-group-item">Computer Systems Analysis</li>
-        </ul>`; 
+        </ul>
+        `; 
     }
 
     /**
