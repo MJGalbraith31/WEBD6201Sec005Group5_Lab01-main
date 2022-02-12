@@ -42,7 +42,7 @@ let core;
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="./Images/#" alt="MJ" style="width:100%">
+            <img src="./Images/MJsLabPicture.jpg" alt="MJ" style="width:100%"/>
             <div class="container">
               <h2>MJ Galbraith</h2>
               <p class="title">Computer Programmer</p>
@@ -54,7 +54,7 @@ let core;
       
         <div class="column">
           <div class="card">
-            <img src="./Images/#" alt="Matthew" style="width:100%">
+            <img src="./Images/mattsLabPicture.jpg" alt="Matthew" style="width:100%"/>
             <div class="container">
               <h2>Matthew Austin</h2>
               <p class="title">Computer Programmer</p>
@@ -74,7 +74,14 @@ let core;
         let body = document.getElementById("bodyCopy"); 
 
         body.innerHTML = `<br/><h2>Our Projects</h2>
-        <p>Below are some of our favorite projects that we have done. </p>`;
+        <p>Below are some of our favorite projects that we have done. </p>
+        <div class="card" style="background-color:grey">
+            <h3>A Custom Dice Roller</h3>
+            <img src="./Images/DiceRoller.png" alt="Dice Rolling Program" style="Width:40%"/>
+            <p>A personal project created by MJ, this program allows you to input any number of a specific kind of die you wish to 
+            roll and will print both the individual results and the total of those rolls. The second tab has a number of less common 
+            dice and the ability to roll dice with a custom number of sides.</p>
+        </div>`;
     }
 
     function displayServices()
