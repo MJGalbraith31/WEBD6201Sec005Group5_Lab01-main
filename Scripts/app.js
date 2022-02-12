@@ -67,6 +67,9 @@ let core;
         `;
     }
 
+    /**
+     * displayProjects - Displays the body contents for projects.html
+     */
     function displayProjects()
     {
         console.log("Disp Proj"); 
@@ -81,7 +84,15 @@ let core;
             <p>A personal project created by MJ, this program allows you to input any number of a specific kind of die you wish to 
             roll and will print both the individual results and the total of those rolls. The second tab has a number of less common 
             dice and the ability to roll dice with a custom number of sides.</p>
-        </div>`;
+        </div>
+        
+        <div class="card" style="background-color:grey">
+            <h3>A WPF windows app with sql</h3>
+            <img src="./Images/NETD3202_Lab03.png" alt="WPF Application" style = Width:40%/>
+            <p>A lab assignment from NETD 3202, this program demonstrated our ability to build WPF desktop apps with functionality to create, read,
+            update, and delete records from a SQL database.</p>
+        </div>
+        `;
     }
 
     function displayServices()
