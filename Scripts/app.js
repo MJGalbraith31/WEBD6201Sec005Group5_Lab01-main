@@ -94,9 +94,9 @@ let core;
         </div>
 
         <div class="card" style="background-color:grey">
-            <h3></h3>
-            <img src="#" alt="" style = Width:40%/>
-            <p></p>
+            <h3>ASP.NET Core Web App with Model-View-Controller</h3>
+            <img src="./Images/NETD3202_DotNetIdentityFramework.png" alt="DotNet Identity Framework" style = Width:40%/>
+            <p>Another assignment from NETD 3202, this program uses MVC and the Identity Framework to build a web application with login capabilities.</p>
         </div>
         `;
     }
