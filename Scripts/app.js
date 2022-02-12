@@ -42,7 +42,7 @@ let core;
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="#" alt="MJ" style="width:100%">
+            <img src="./Images/#" alt="MJ" style="width:100%">
             <div class="container">
               <h2>MJ Galbraith</h2>
               <p class="title">Computer Programmer</p>
@@ -54,7 +54,7 @@ let core;
       
         <div class="column">
           <div class="card">
-            <img src="#" alt="Matthew" style="width:100%">
+            <img src="./Images/#" alt="Matthew" style="width:100%">
             <div class="container">
               <h2>Matthew Austin</h2>
               <p class="title">Computer Programmer</p>
@@ -70,6 +70,11 @@ let core;
     function displayProjects()
     {
         console.log("Disp Proj"); 
+
+        let body = document.getElementById("bodyCopy"); 
+
+        body.innerHTML = `<br/><h2>Our Projects</h2>
+        <p>Below are some of our favorite projects that we have done. </p>`;
     }
 
     function displayServices()
@@ -145,6 +150,10 @@ let core;
         console.log("App Started...");
 
         document.getElementById("projLink").innerHTML = `<i class="fas fa-cog fa-lg"></i> Projects`;
+
+        document.getElementById("aboutLinkLi").insertAdjacentHTML("afterend", `<li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"><i class="fas fa-person fa-lg"></i> Human Resources</a>
+            </li>`);
 
         switch (document.title) 
         {
