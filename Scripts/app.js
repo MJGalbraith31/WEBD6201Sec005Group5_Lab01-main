@@ -88,9 +88,15 @@ let core;
         
         <div class="card" style="background-color:grey">
             <h3>A WPF windows app with sql</h3>
-            <img src="./Images/NETD3202_Lab03.png" alt="WPF Application" style = Width:40%/>
+            <img src="./Images/NETD3202_Lab03.png" alt="WPF Application" width="128" height="128" style = Width:40%/>
             <p>A lab assignment from NETD 3202, this program demonstrated our ability to build WPF desktop apps with functionality to create, read,
             update, and delete records from a SQL database.</p>
+        </div>
+
+        <div class="card" style="background-color:grey">
+            <h3></h3>
+            <img src="#" alt="" style = Width:40%/>
+            <p></p>
         </div>
         `;
     }
