@@ -93,7 +93,7 @@ let core;
             update, and delete records from a SQL database.</p>
         </div>
 
-        <div class="card" style="background-color:grey">
+        <div class="card" style="background-color:grey" style="Width:40%">
             <h3>ASP.NET Core Web App with Model-View-Controller</h3>
             <img src="./Images/NETD3202_DotNetIdentityFramework.png" alt="DotNet Identity Framework" style = Width:40%/>
             <p>Another assignment from NETD 3202, this program uses MVC and the Identity Framework to build a web application with login capabilities.</p>
