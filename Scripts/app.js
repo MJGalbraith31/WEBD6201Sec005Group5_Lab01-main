@@ -1,7 +1,7 @@
 /*
     Authors: MJ Galbraith (100755993), Matthew Austin (100660651)
     File: app.js
-    Date: 2022/02/09
+    Date: 2022/02/11
     Description: 
         This is the javascript file for the website
     
@@ -48,7 +48,7 @@ let core;
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="./Images/MJsLabPicture.jpg" alt="MJ" style="width:100%"/>
+            <img src="./Images/MJsLabPicture.jpg" alt="MJ" class="headShot"/>
             <div class="container">
               <h2>MJ Galbraith</h2>
               <p class="title">Computer Programmer</p>
@@ -60,7 +60,7 @@ let core;
       
         <div class="column">
           <div class="card">
-            <img src="./Images/mattsLabPicture.jpg" alt="Matthew" style="width:100%"/>
+            <img src="./Images/mattsLabPicture.jpg" alt="Matthew" class="headShot"/>
             <div class="container">
               <h2>Matthew Austin</h2>
               <p class="title">Computer Programmer</p>
@@ -101,7 +101,7 @@ let core;
 
         <div class="card" style="background-color:grey" style="Width:40%">
             <h3>ASP.NET Core Web App with Model-View-Controller</h3>
-            <img src="./Images/NETD3202_DotNetIdentityFramework.png" alt="DotNet Identity Framework" style = Width:40%/>
+            <img src="./Images/NETD3202_DotNetIdentityFramework.png" alt="DotNet Identity Framework" style = "Width:40%"/>
             <p>Another assignment from NETD 3202, this program uses MVC and the Identity Framework to build a web application with login capabilities.</p>
         </div>
         `;
